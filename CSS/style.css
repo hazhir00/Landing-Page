@@ -1,0 +1,191 @@
+/* ? Imports */
+/* _______________________________________________________________ */
+
+/* ? Variables */
+:root {
+   /* Color Theme */
+   --Very-dark-cyan-blue: hsl(210, 11%, 15%);
+   --Dark-cyan-blue: hsl(212, 93%, 23%);
+   --Medium-cyan-blue: hsl(213, 93%, 64%);
+   --Light-cyan-blue: hsl(212, 93%, 82%);
+   --Lemon-Squeeze: hsl(45, 100%, 79%);
+   --White: hsl(0, 0%, 100%);
+   /* Typography */
+
+   /* Spacing */
+
+   /* Border Radius */
+
+   /* Shadows */
+}
+
+/* ? Color Theme for Dark mode goes here */
+/* .dark-mode {
+
+} */
+/* _______________________________________________________________ */
+/* !Main CSS */
+
+header {
+   background-color: var(--Dark-cyan-blue);
+   color: var(--White);
+   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+   padding-block: 0.25em;
+}
+
+nav {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo a img {
+   width: 60%;
+   cursor: pointer;
+}
+
+.menu ul {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+
+.menu ul li {
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu ul li ul {
+   display: none;
+   position: absolute;
+   top: 100%;
+   right: 0;
+   padding-top: 1.1em;
+   background-color: var(--Dark-cyan-blue);
+   border-radius: 5px;
+   width: 12em;
+}
+
+.menu ul li:hover ul {
+   display: block;
+}
+
+.menu ul li ul li {
+   display: block;
+   padding: 0.5rem 1rem;
+   transition: 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+.menu ul li ul li:hover {
+   background-color: var(--Light-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+}
+
+.cta-buttons {
+   display: flex;
+   gap: 1rem;
+}
+
+.cta-buttons > :first-child {
+   background-color: var(--Lemon-Squeeze);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.cta-buttons > :last-child {
+   background-color: var(--Medium-cyan-blue);
+   color: var(--White);
+   padding: 0.5em 1em;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+   cursor: pointer;
+}
+
+.hamburger {
+   display: none;
+}
+
+.hamburger-menu {
+   display: none;
+}
+/* _______________________________________________________________ */
+/* ? Media Queries */
+/* Different Screen Sizes 
+-Small Mobile = 320px
+-Medium Mobile = 375px
+-Large Mobile = 425px
+Tablet = 768px
+Laptop = 1024px
+Large Laptop = 1440px
+4K = 2560px
+*/
+
+@media (max-width: 999px) {
+   .menu {
+      display: none;
+   }
+
+   .cta-buttons {
+      display: none;
+   }
+
+   .hamburger {
+      display: block;
+   }
+
+   #bars {
+      display: block;
+      font-size: 2em;
+      cursor: pointer;
+   }
+
+   #close {
+      font-size: 2.5rem;
+      padding: 0.3em 0.4em;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+   }
+
+   .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: min(75%, 20em);
+      height: 100vh;
+      background: var(--Dark-cyan-blue);
+      transform: translateX(-100%);
+      transition: 0.5s ease-in;
+   }
+
+   .hamburger-menu nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0.5em;
+      width: 100%;
+   }
+
+   .hamburger-menu nav ul li {
+      padding: 0.75em 1em;
+      width: 100%;
+   }
+
+   .hamburger-menu nav ul li:hover {
+      background-color: var(--Light-cyan-blue);
+      color: var(--Very-dark-cyan-blue);
+   }
+}
+/* _______________________________________________________________ */

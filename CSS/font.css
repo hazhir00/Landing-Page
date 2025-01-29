@@ -1,0 +1,11 @@
+/* ? Local Fonts */
+@font-face {
+   font-family: "Vazirmatn";
+   src: url("/Assets/Fonts/Vazirmatn-VariableFont_wght.ttf") format("truetype");
+}
+/* ? Setting Page's Font */
+html {
+   font-family: "Vazirmatn";
+   /* For Right to Left Written Languages */
+   direction: rtl;
+}
