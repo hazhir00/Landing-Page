@@ -111,21 +111,13 @@ nav {
    cursor: pointer;
 }
 
-.cta-buttons > :first-child {
-   background-color: var(--Lemon-Squeeze);
-   color: var(--Very-dark-cyan-blue);
-   padding: 0.5em 1em;
-   border-radius: 5px;
-   cursor: pointer;
-}
-
 .cta-buttons > :first-child:hover {
    background-color: var(--Lemon-squeeze-hover);
 }
 
 .cta-buttons > :last-child {
    background-color: var(--Medium-cyan-blue);
-   color: var(--White);
+   color: var(--Very-dark-cyan-blue);
    padding: 0.5em 1em;
    border-radius: 5px;
    display: flex;
@@ -183,7 +175,7 @@ nav {
 .hero-inner-right button {
    font-size: 1.1rem;
    background-color: var(--Medium-cyan-blue);
-   color: var(--White);
+   color: var(--Very-dark-cyan-blue);
    padding: 0.5em 1em;
    margin-top: 0.75em;
    border-radius: 5px;
