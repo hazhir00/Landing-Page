@@ -41,8 +41,12 @@ nav {
    align-items: center;
 }
 
+.logo {
+   width: min(40%, 12em);
+}
+
 .logo a img {
-   width: 60%;
+   width: 100%;
    cursor: pointer;
 }
 
@@ -50,9 +54,12 @@ nav {
    display: flex;
    align-items: center;
    gap: 2rem;
+   width: 40%;
 }
 
 .menu ul li {
+   font-size: 1.1rem;
+   font-weight: 500;
    display: flex;
    align-items: center;
    gap: 0.5em;
@@ -181,10 +188,31 @@ Large Laptop = 1440px
    .hamburger-menu nav ul li {
       padding: 0.75em 1em;
       width: 100%;
+      border-radius: 5px;
    }
 
    .hamburger-menu nav ul li:hover {
       background-color: var(--Light-cyan-blue);
+      color: var(--Very-dark-cyan-blue);
+   }
+
+   .hamburger-menu nav ul li ul {
+      background-color: var(--Medium-cyan-blue);
+      color: var(--Very-dark-cyan-blue);
+      border-radius: 5px;
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+   }
+
+   .hamburger-menu nav ul li ul li {
+      padding: 0.25 1em;
+      border-radius: 5px;
+   }
+
+   .hamburger-menu nav ul li ul li:hover {
+      background-color: var(--Lemon-Squeeze);
       color: var(--Very-dark-cyan-blue);
    }
 }
