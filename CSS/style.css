@@ -7,8 +7,10 @@
    --Very-dark-cyan-blue: hsl(210, 11%, 15%);
    --Dark-cyan-blue: hsl(212, 93%, 23%);
    --Medium-cyan-blue: hsl(213, 93%, 64%);
+   --Medium-cyan-blue-hover: hsl(213, 93%, 54%);
    --Light-cyan-blue: hsl(212, 93%, 82%);
    --Lemon-Squeeze: hsl(45, 100%, 79%);
+   --Lemon-squeeze-hover: hsl(45, 100%, 69%);
    --White: hsl(0, 0%, 100%);
    /* Typography */
 
@@ -24,13 +26,14 @@
 
 } */
 /* _______________________________________________________________ */
-/* !Main CSS */
-
+/* ! Header */
 header {
    background-color: var(--Dark-cyan-blue);
    color: var(--White);
-   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.5);
    padding-block: 0.25em;
+   position: sticky;
+   top: 0;
 }
 
 nav {
@@ -75,6 +78,7 @@ nav {
    padding-top: 1.1em;
    background-color: var(--Dark-cyan-blue);
    border-radius: 5px;
+   transition: 0.5s ease-in-out;
    width: 12em;
 }
 
@@ -107,6 +111,18 @@ nav {
    cursor: pointer;
 }
 
+.cta-buttons > :first-child {
+   background-color: var(--Lemon-Squeeze);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.cta-buttons > :first-child:hover {
+   background-color: var(--Lemon-squeeze-hover);
+}
+
 .cta-buttons > :last-child {
    background-color: var(--Medium-cyan-blue);
    color: var(--White);
@@ -118,12 +134,67 @@ nav {
    cursor: pointer;
 }
 
+.cta-buttons > :last-child:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+}
+
 .hamburger {
    display: none;
 }
 
 .hamburger-menu {
    display: none;
+}
+
+/* ! First Section */
+.hero {
+   background: var(--Dark-cyan-blue) url(/Assets/Images/Waves.svg) no-repeat center
+      center/contain;
+   color: var(--White);
+   height: 80vh;
+}
+
+.hero-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.hero-inner-right {
+   flex-basis: 1;
+}
+
+.hero-inner-right h1 {
+   font-size: 3.5rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.hero-inner-right p {
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.hero-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Lemon-Squeeze);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.hero-inner-right h1 span {
+   color: var(--Lemon-squeeze-hover);
+}
+
+.hero-inner-left img {
+   width: 60em;
 }
 /* _______________________________________________________________ */
 /* ? Media Queries */
@@ -138,6 +209,7 @@ Large Laptop = 1440px
 */
 
 @media (max-width: 999px) {
+   /* ! Mobile menu */
    .menu {
       display: none;
    }
@@ -189,6 +261,8 @@ Large Laptop = 1440px
       padding: 0.75em 1em;
       width: 100%;
       border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: 500;
    }
 
    .hamburger-menu nav ul li:hover {
@@ -209,11 +283,86 @@ Large Laptop = 1440px
    .hamburger-menu nav ul li ul li {
       padding: 0.25 1em;
       border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 500;
    }
 
    .hamburger-menu nav ul li ul li:hover {
       background-color: var(--Lemon-Squeeze);
       color: var(--Very-dark-cyan-blue);
    }
+
+   /* ! First Section */
+   .hero {
+      height: 50vh;
+   }
+
+   .hero-inner-right h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .hero-inner-right p {
+      font-size: 0.8rem;
+      font-weight: 300;
+      margin-bottom: 1em;
+   }
+
+   .hero-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .hero-inner-left img {
+      width: 40em;
+   }
 }
+
+@media (max-width: 499px) {
+   /* ! First Section */
+   .hero {
+      height: 80vh;
+   }
+
+   .hero-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .hero-inner-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .hero-inner-right h1 {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .hero-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .hero-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+
+   .hero-inner-left img {
+      width: 40em;
+      margin-top: -2em;
+   }
+}
+
 /* _______________________________________________________________ */
