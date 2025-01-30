@@ -151,7 +151,7 @@ nav {
    background: var(--Dark-cyan-blue) url(/Assets/Images/Waves.svg) no-repeat center
       center/contain;
    color: var(--White);
-   height: 80vh;
+   height: 70vh;
 }
 
 .hero-inner {
@@ -182,11 +182,17 @@ nav {
 
 .hero-inner-right button {
    font-size: 1.1rem;
-   background-color: var(--Lemon-Squeeze);
-   color: var(--Very-dark-cyan-blue);
+   background-color: var(--Medium-cyan-blue);
+   color: var(--White);
    padding: 0.5em 1em;
+   margin-top: 0.75em;
    border-radius: 5px;
    cursor: pointer;
+}
+
+.hero-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
 }
 
 .hero-inner-right h1 span {
@@ -208,7 +214,28 @@ Large Laptop = 1440px
 4K = 2560px
 */
 
-@media (max-width: 999px) {
+@media (max-width: 1190px) {
+   /* ! First Section */
+   .hero-inner-right h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25em;
+   }
+
+   .hero-inner-right p {
+      font-size: 1rem;
+      margin-top: 0.75em;
+   }
+
+   .hero-inner-right button {
+      font-size: 1rem;
+   }
+
+   .hero-inner-left img {
+      width: 50em;
+   }
+}
+
+@media (max-width: 930px) {
    /* ! Mobile menu */
    .menu {
       display: none;
@@ -224,15 +251,14 @@ Large Laptop = 1440px
 
    #bars {
       display: block;
-      font-size: 2em;
+      width: 2rem;
       cursor: pointer;
    }
 
    #close {
-      font-size: 2.5rem;
-      padding: 0.3em 0.4em;
-      width: 100%;
-      text-align: left;
+      align-self: self-end;
+      margin: 1em;
+      width: 2em;
       cursor: pointer;
    }
 
@@ -263,6 +289,14 @@ Large Laptop = 1440px
       border-radius: 5px;
       font-size: 1.1rem;
       font-weight: 500;
+   }
+
+   .hamburger-menu nav ul li a {
+      margin-left: 0.3em;
+   }
+
+   .angle-down {
+      display: inline;
    }
 
    .hamburger-menu nav ul li:hover {
@@ -299,13 +333,10 @@ Large Laptop = 1440px
 
    .hero-inner-right h1 {
       font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 0.25em;
    }
 
    .hero-inner-right p {
       font-size: 0.8rem;
-      font-weight: 300;
       margin-bottom: 1em;
    }
 
@@ -318,7 +349,7 @@ Large Laptop = 1440px
    }
 }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
    /* ! First Section */
    .hero {
       height: 80vh;
@@ -341,7 +372,7 @@ Large Laptop = 1440px
 
    .hero-inner-right h1 {
       text-align: center;
-      margin-top: 2em;
+      margin-top: 0.5em;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 0.25em;
@@ -360,8 +391,8 @@ Large Laptop = 1440px
    }
 
    .hero-inner-left img {
-      width: 40em;
-      margin-top: -2em;
+      width: 30em;
+      margin-top: 1em;
    }
 }
 
