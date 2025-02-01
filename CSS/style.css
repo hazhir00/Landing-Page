@@ -130,6 +130,10 @@ nav {
    background-color: var(--Medium-cyan-blue-hover);
 }
 
+.arrow-left {
+   rotate: 180deg;
+}
+
 .hamburger {
    display: none;
 }
@@ -138,7 +142,7 @@ nav {
    display: none;
 }
 
-/* ! First Section */
+/* ! Hero Section */
 .hero {
    background: var(--Dark-cyan-blue) url(/Assets/Images/Waves.svg) no-repeat center
       center/contain;
@@ -167,6 +171,7 @@ nav {
 }
 
 .hero-inner-right p {
+   width: 80%;
    font-size: 1.3rem;
    font-weight: 300;
    margin-bottom: 1em;
@@ -180,6 +185,9 @@ nav {
    margin-top: 0.75em;
    border-radius: 5px;
    cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
 }
 
 .hero-inner-right button:hover {
@@ -194,6 +202,235 @@ nav {
 .hero-inner-left img {
    width: 60em;
 }
+
+/* ! Project Management Section */
+.project-management {
+   color: var(--Very-dark-cyan-blue);
+   height: 70vh;
+   background: url(/Assets/Images/Waves\ 2.svg) no-repeat left bottom/20em;
+}
+
+.project-management-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.project-management-inner-right {
+   width: 50%;
+}
+
+.project-management-inner-right h2 {
+   font-size: 3.5rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.project-management-inner-right p {
+   width: 80%;
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.project-management-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.project-management-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+
+.project-management-inner-left img {
+   width: 60em;
+}
+
+/* ! Work Together Section */
+.work-together {
+   color: var(--Very-dark-cyan-blue);
+   height: 70vh;
+}
+
+.work-together-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.work-together-inner-right {
+   width: 50%;
+}
+
+.work-together-inner-right h2 {
+   font-size: 3.5rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.work-together-inner-right p {
+   width: 90%;
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.work-together-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.work-together-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+.work-together-inner-left {
+   width: 50%;
+   display: grid;
+   justify-content: right;
+}
+
+.work-together-inner-left img {
+   width: 25em;
+}
+
+/* ! Extension Section Section */
+.extension {
+   background-color: var(--Dark-cyan-blue);
+   color: var(--White);
+   height: 70vh;
+}
+
+.extension-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.extension-inner-right {
+   width: 50%;
+}
+
+.extension-inner-right h2 {
+   font-size: 3.5rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.extension-inner-right p {
+   width: 90%;
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.extension-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.extension-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+
+.extension-inner-left img {
+   width: 40em;
+}
+
+/* ! Customization Section */
+
+.customization {
+   background-color: var(--White);
+   color: var(--Very-dark-cyan-blue);
+   height: 70vh;
+}
+
+.customization-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.customization-inner-right {
+   width: 50%;
+}
+
+.customization-inner-right h2 {
+   font-size: 3.5rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.customization-inner-right p {
+   width: 90%;
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.customization-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.customization-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+
+.customization-inner-left img {
+   width: 32em;
+}
 /* _______________________________________________________________ */
 /* ? Media Queries */
 /* Different Screen Sizes 
@@ -207,7 +444,7 @@ Large Laptop = 1440px
 */
 
 @media (max-width: 1190px) {
-   /* ! First Section */
+   /* ! Hero Section */
    .hero-inner-right h1 {
       font-size: 2.5rem;
       margin-bottom: 0.25em;
@@ -225,6 +462,82 @@ Large Laptop = 1440px
    .hero-inner-left img {
       width: 50em;
    }
+}
+
+/* ! Project Management Section */
+.project-management-inner-right h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.project-management-inner-right p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.project-management-inner-right button {
+   font-size: 1rem;
+}
+
+.project-management-inner-left img {
+   width: 50em;
+}
+
+/* ! Work Together Section */
+.work-together-inner-right h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.work-together-inner-right p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.work-together-inner-right button {
+   font-size: 1rem;
+}
+
+.work-together-inner-left img {
+   width: 23em;
+}
+
+/* ! Extension Section Section */
+.extension-inner-right h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.extension-inner-right p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.extension-inner-right button {
+   font-size: 1rem;
+}
+
+.extension-inner-left img {
+   width: 30em;
+}
+
+/* ! Customization Section */
+.customization-inner-right h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.customization-inner-right p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.customization-inner-right button {
+   font-size: 1rem;
+}
+
+.customization-inner-left img {
+   width: 28em;
 }
 
 @media (max-width: 930px) {
@@ -318,7 +631,7 @@ Large Laptop = 1440px
       color: var(--Very-dark-cyan-blue);
    }
 
-   /* ! First Section */
+   /* ! Hero Section */
    .hero {
       height: 50vh;
    }
@@ -339,10 +652,99 @@ Large Laptop = 1440px
    .hero-inner-left img {
       width: 40em;
    }
+
+   /* ! Project Management Section */
+   .project-management {
+      height: 50vh;
+   }
+
+   .project-management-inner-right h2 {
+      font-size: 2rem;
+   }
+
+   .project-management-inner-right p {
+      width: 90%;
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .project-management-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .project-management-inner-left img {
+      width: 40em;
+   }
+
+   /* ! Work Together Section */
+   .work-together {
+      height: 50vh;
+   }
+
+   .work-together-inner-right h2 {
+      font-size: 2rem;
+   }
+
+   .work-together-inner-right p {
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .work-together-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .work-together-inner-left img {
+      width: 18em;
+   }
+
+   /* ! Extension Section */
+   .extension {
+      height: 50vh;
+   }
+
+   .extension-inner-right h2 {
+      font-size: 2rem;
+   }
+
+   .extension-inner-right p {
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .extension-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .extension-inner-left img {
+      width: 25em;
+   }
+
+   /* ! Customization Section */
+   .customization {
+      height: 50vh;
+   }
+
+   .customization-inner-right h2 {
+      font-size: 2rem;
+   }
+
+   .customization-inner-right p {
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .customization-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .customization-inner-left img {
+      width: 25em;
+   }
 }
 
 @media (max-width: 500px) {
-   /* ! First Section */
+   /* ! Hero Section */
    .hero {
       height: 80vh;
    }
@@ -385,6 +787,207 @@ Large Laptop = 1440px
    .hero-inner-left img {
       width: 30em;
       margin-top: 1em;
+   }
+
+   /* ! Project Management Section */
+   .project-management {
+      height: 80vh;
+      margin-top: 2em;
+   }
+
+   .project-management-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .project-management-inner-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .project-management-inner-right h2 {
+      text-align: center;
+      margin-top: 0.5em;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .project-management-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .project-management-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+
+   .project-management-inner-left img {
+      width: 30em;
+      margin-top: 1em;
+   }
+
+   /* ! Work Together Section */
+   .work-together {
+      height: 80vh;
+   }
+
+   .work-together-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .work-together-inner-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .work-together-inner-right h2 {
+      text-align: center;
+      margin-top: 0.5em;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .work-together-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .work-together-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+   .work-together-inner-left {
+      width: 100%;
+      place-content: center;
+   }
+
+   .work-together-inner-left img {
+      width: 18em;
+      margin-top: 3em;
+   }
+
+   /* ! Extension Section */
+   .extension {
+      height: 80vh;
+   }
+
+   .extension-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .extension-inner-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .extension-inner-right h2 {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .extension-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .extension-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+   .extension-inner-left {
+      width: 100%;
+      display: grid;
+      place-content: center;
+   }
+
+   .extension-inner-left img {
+      width: 20em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+   }
+
+   /* ! Customization Section */
+   .customization {
+      height: 80vh;
+   }
+
+   .customization-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .customization-inner-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .customization-inner-right h2 {
+      text-align: center;
+      margin-top: 2em;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .customization-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .customization-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+   .customization-inner-left {
+      width: 100%;
+      display: grid;
+      place-content: center;
+   }
+
+   .customization-inner-left img {
+      width: 20em;
+      margin-top: 1em;
+      margin-bottom: 2em;
    }
 }
 
