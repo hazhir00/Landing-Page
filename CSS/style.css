@@ -1621,8 +1621,8 @@ Large Laptop = 1440px
    }
    .data-inner-left img {
       width: 20em;
-      margin-top: 1em;
-      margin-bottom: 2em;
+      margin-top: 2em;
+      margin-bottom: 1em;
    }
 
    /* ! Sponsors Section */
@@ -1632,12 +1632,11 @@ Large Laptop = 1440px
    }
    .sponsors-inner h2 {
       font-size: 2rem;
-      height: max-content;
    }
 
    .images {
       grid-template: repeat(4, 25%) / 100%;
-      margin-top: -8em;
+      margin-top: -4em;
    }
 
    /* ! Apps Section */
@@ -1687,14 +1686,15 @@ Large Laptop = 1440px
    }
    .apps-inner-left img {
       width: 17em;
-      margin-top: 1em;
-      margin-bottom: 2em;
+      margin-top: 2em;
+      margin-bottom: 1em;
    }
 
    /* ! Try Section */
 
    .try {
       min-height: 50vh;
+      text-align: center;
    }
 
    .try-inner {
@@ -1708,7 +1708,7 @@ Large Laptop = 1440px
    /* ! Footer */
 
    footer {
-      padding-top: 5em;
+      padding-top: 3em;
       text-align: center;
 
       .footer-inner {
