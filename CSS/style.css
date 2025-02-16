@@ -130,6 +130,11 @@ nav {
    background-color: var(--Medium-cyan-blue-hover);
 }
 
+a,
+button {
+   transition: 0.3s ease;
+}
+
 .right-arrow {
    width: 0.7em;
 }
@@ -431,6 +436,209 @@ nav {
 .customization-inner-left img {
    width: 32em;
 }
+
+/* ! Synchronization Section */
+
+.synchronization {
+   background: var(--Dark-cyan-blue) url(/Assets/Images/Waves\ 3.svg) no-repeat left
+      center/20rem;
+   color: var(--White);
+   min-height: 35vh;
+   text-align: center;
+}
+
+.synchronization-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+
+.synchronization-inner h2 {
+   font-size: 2.2rem;
+   font-weight: 700;
+   margin-bottom: 0.5em;
+   margin-top: 2em;
+}
+
+.synchronization-inner p {
+   width: 60%;
+   font-size: 1.2rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.synchronization-inner button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   margin-bottom: 3em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.synchronization-inner button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+/* ! Data Section  */
+
+.data {
+   background-color: var(--White);
+   color: var(--Very-dark-cyan-blue);
+   height: 70vh;
+}
+
+.data-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.data-inner-right {
+   width: 50%;
+}
+
+.data-inner-right h2 {
+   font-size: 3rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.data-inner-right p {
+   width: 90%;
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.data-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.data-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+
+.data-inner-left img {
+   width: 32em;
+}
+
+/* ! Sponsors Section */
+
+.sponsors {
+   background-color: var(--White);
+   color: var(--Very-dark-cyan-blue);
+   height: 30vh;
+   margin-bottom: 8em;
+}
+
+.sponsors-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   height: 100%;
+   display: grid;
+   justify-items: center;
+}
+
+.sponsors-inner h2 {
+   font-size: 3rem;
+   font-weight: 700;
+   text-align: center;
+}
+
+.images {
+   width: min(90%, 1200px);
+   display: grid;
+   grid-template-columns: repeat(4, 25%);
+   align-items: center;
+   justify-items: center;
+}
+
+.images img {
+   width: 60%;
+   height: 60%;
+}
+
+/* ! Apps Section */
+
+.apps {
+   background: var(--Dark-cyan-blue) url(/Assets/Images/Waves.svg) no-repeat center
+      center/contain;
+   color: var(--White);
+   height: 70vh;
+}
+
+.apps-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+
+.apps-inner-right {
+   width: 50%;
+}
+
+.apps-inner-right h2 {
+   font-size: 3rem;
+   font-weight: 700;
+   margin-bottom: 0.25em;
+}
+
+.apps-inner-right p {
+   width: 90%;
+   font-size: 1.3rem;
+   font-weight: 300;
+   margin-bottom: 1em;
+}
+
+.apps-inner-right button {
+   font-size: 1.1rem;
+   background-color: var(--Medium-cyan-blue);
+   color: var(--Very-dark-cyan-blue);
+   padding: 0.5em 1em;
+   margin-top: 0.75em;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.apps-inner-right button:hover {
+   background-color: var(--Medium-cyan-blue-hover);
+   color: var(--White);
+}
+
+.apps-inner-left img {
+   width: 32em;
+}
+
 /* _______________________________________________________________ */
 /* ? Media Queries */
 /* Different Screen Sizes 
@@ -539,6 +747,73 @@ Large Laptop = 1440px
 .customization-inner-left img {
    width: 28em;
 }
+
+/* ! Synchronization Section */
+
+.synchronization-inner h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.synchronization-inner p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.synchronization-inner button {
+   font-size: 1rem;
+}
+
+/* ! Data Section  */
+.data-inner-right h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.data-inner-right p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.data-inner-right button {
+   font-size: 1rem;
+}
+
+.data-inner-left img {
+   width: 28em;
+}
+
+/* ! Sponsors Section */
+
+.sponsors {
+   height: 25vh;
+   margin-bottom: 6em;
+}
+.sponsors-inner h2 {
+   font-size: 2.5rem;
+}
+
+/* ! Apps Section */
+.apps-inner-right h2 {
+   font-size: 2.5rem;
+   margin-bottom: 0.25em;
+}
+
+.apps-inner-right p {
+   font-size: 1rem;
+   margin-top: 0.75em;
+}
+
+.apps-inner-right button {
+   font-size: 1rem;
+}
+
+.apps-inner-left img {
+   width: 23em;
+}
+
+/* _______________________________________________________________ */
+/* ? Media Queries */
 
 @media (max-width: 930px) {
    /* ! Mobile menu */
@@ -742,7 +1017,86 @@ Large Laptop = 1440px
    .customization-inner-left img {
       width: 25em;
    }
+
+   /* ! Synchronization Section */
+   .synchronization {
+      min-height: 40vh;
+   }
+
+   .synchronization-inner h2 {
+      font-size: 2rem;
+   }
+
+   .synchronization-inner p {
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .synchronization-inner button {
+      font-size: 0.9rem;
+   }
+   /* ! Data Section  */
+   .data {
+      height: 50vh;
+   }
+
+   .data-inner-right h2 {
+      font-size: 2rem;
+   }
+
+   .data-inner-right p {
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .data-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .data-inner-left img {
+      width: 25em;
+   }
+
+   /* ! Sponsors Section */
+
+   .sponsors {
+      height: 50vh;
+      margin-bottom: 3em;
+   }
+
+   .sponsors-inner h2 {
+      font-size: 2rem;
+   }
+
+   .images {
+      grid-template: repeat(2, 50%) / repeat(2, 50%);
+   }
+
+   /* ! Apps Section */
+   .apps {
+      height: 50vh;
+   }
+
+   .apps-inner-right h2 {
+      font-size: 2rem;
+   }
+
+   .apps-inner-right p {
+      font-size: 0.8rem;
+      margin-bottom: 1em;
+   }
+
+   .apps-inner-right button {
+      font-size: 0.9rem;
+   }
+
+   .apps-inner-left img {
+      width: 18em;
+   }
 }
+
+/* _______________________________________________________________ */
+/* ? Media Queries */
 
 @media (max-width: 500px) {
    /* ! Hero Section */
@@ -987,6 +1341,146 @@ Large Laptop = 1440px
 
    .customization-inner-left img {
       width: 20em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+   }
+
+   /* ! Synchronization Section */
+   .synchronization {
+      min-height: 47vh;
+      background-size: 10em;
+      background-position: top left;
+   }
+
+   .synchronization-inner h2 {
+      font-size: 2rem;
+      font-weight: 700;
+   }
+
+   .synchronization-inner p {
+      width: 90%;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .synchronization-inner button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+
+   /* ! Data Section  */
+   .data {
+      min-height: 70vh;
+   }
+
+   .data-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .data-inner-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .data-inner-right h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .data-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .data-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+   .data-inner-left {
+      width: 100%;
+      display: grid;
+      place-content: center;
+   }
+   .data-inner-left img {
+      width: 20em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+   }
+
+   /* ! Sponsors Section */
+
+   .sponsors {
+      height: 70vh;
+   }
+   .sponsors-inner h2 {
+      font-size: 2rem;
+      height: max-content;
+   }
+
+   .images {
+      grid-template: repeat(4, 25%) / 100%;
+      margin-top: -10em;
+   }
+
+   /* ! Apps Section */
+
+   .apps {
+      min-height: 70vh;
+   }
+
+   .apps-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+   }
+
+   .apps-inner-right {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .apps-inner-right h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.25em;
+   }
+
+   .apps-inner-right p {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-top: 0.75em;
+   }
+
+   .apps-inner-right button {
+      font-size: 0.9rem;
+      margin-top: 0.75em;
+   }
+   .apps-inner-left {
+      width: 100%;
+      display: grid;
+      place-content: center;
+   }
+   .apps-inner-left img {
+      width: 17em;
       margin-top: 1em;
       margin-bottom: 2em;
    }
