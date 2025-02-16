@@ -130,8 +130,8 @@ nav {
    background-color: var(--Medium-cyan-blue-hover);
 }
 
-.arrow-left {
-   rotate: 180deg;
+.right-arrow {
+   width: 0.7em;
 }
 
 .hamburger {
@@ -578,6 +578,7 @@ Large Laptop = 1440px
       background: var(--Dark-cyan-blue);
       transform: translateX(-100%);
       transition: 0.5s ease-in;
+      z-index: 1000;
    }
 
    .hamburger-menu nav ul {
@@ -746,7 +747,7 @@ Large Laptop = 1440px
 @media (max-width: 500px) {
    /* ! Hero Section */
    .hero {
-      min-height: 60vh;
+      min-height: 70vh;
    }
 
    .hero-inner {
@@ -791,7 +792,8 @@ Large Laptop = 1440px
 
    /* ! Project Management Section */
    .project-management {
-      min-height: 60vh;
+      min-height: 70vh;
+
       margin-top: 2em;
    }
 
@@ -838,7 +840,7 @@ Large Laptop = 1440px
 
    /* ! Work Together Section */
    .work-together {
-      min-height: 60vh;
+      min-height: 70vh;
    }
 
    .work-together-inner {
@@ -859,7 +861,7 @@ Large Laptop = 1440px
 
    .work-together-inner-right h2 {
       text-align: center;
-      margin-top: 2em;
+      margin-top: 1em;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 0.25em;
@@ -889,7 +891,7 @@ Large Laptop = 1440px
 
    /* ! Extension Section */
    .extension {
-      min-height: 60vh;
+      min-height: 70vh;
    }
 
    .extension-inner {
@@ -940,7 +942,7 @@ Large Laptop = 1440px
 
    /* ! Customization Section */
    .customization {
-      min-height: 60vh;
+      min-height: 70vh;
    }
 
    .customization-inner {
