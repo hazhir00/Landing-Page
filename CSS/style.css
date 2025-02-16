@@ -639,6 +639,154 @@ button {
    width: 32em;
 }
 
+/* ! Try Section */
+
+.try {
+   background: var(--Dark-cyan-blue);
+   color: var(--White);
+   min-height: 70vh;
+}
+
+.try-inner {
+   width: min(90%, 1200px);
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+
+   h2 {
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+      margin-top: 1em;
+   }
+
+   p {
+      font-size: 1.3rem;
+      margin-bottom: 1em;
+   }
+
+   button {
+      font-size: 1.1rem;
+      background-color: var(--Medium-cyan-blue);
+      color: var(--Very-dark-cyan-blue);
+      padding: 0.5em 1em;
+      margin-top: 0.75em;
+      border-radius: 5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      margin-bottom: 2em;
+   }
+
+   button + p {
+      margin-bottom: 2em;
+   }
+
+   section {
+      display: flex;
+      gap: 3em;
+   }
+}
+
+/* ! Footer */
+
+footer {
+   background: var(--Dark-cyan-blue);
+   color: var(--White);
+   padding-top: 5em;
+
+   .footer-inner {
+      width: min(90%, 1200px);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+
+      .top {
+         display: grid;
+         grid-template-columns: 30% repeat(3, 1fr) 25%;
+
+         section {
+            img {
+               width: 40%;
+               margin-bottom: 1rem;
+            }
+            p {
+               width: 80%;
+            }
+         }
+
+         .footer-menu {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+               font-size: 1.1rem;
+               font-weight: 700;
+               margin-bottom: 1em;
+            }
+
+            a {
+               margin-bottom: 0.5em;
+               font-weight: 300;
+
+               &:hover {
+                  color: var(--Light-cyan-blue);
+               }
+            }
+
+            p {
+               width: 100%;
+            }
+
+            button {
+               align-self: flex-start;
+               margin-top: 1em;
+               font-size: 1rem;
+               background-color: var(--Medium-cyan-blue);
+               color: var(--Very-dark-cyan-blue);
+               padding: 0.25em 2em;
+               margin-top: 0.75em;
+               border-radius: 5px;
+               cursor: pointer;
+               display: flex;
+
+               &:hover {
+                  background-color: var(--Medium-cyan-blue-hover);
+                  color: var(--White);
+               }
+            }
+         }
+      }
+
+      .bottom {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         border-top: 1px solid var(--Very-dark-cyan-blue);
+         padding-block: 2em;
+         margin-top: 2em;
+
+         section {
+            display: flex;
+            gap: 2em;
+
+            img {
+               width: 50%;
+               height: 70%;
+
+               &:hover {
+                  filter: brightness(0.8);
+               }
+            }
+         }
+      }
+   }
+}
+
 /* _______________________________________________________________ */
 /* ? Media Queries */
 /* Different Screen Sizes 
@@ -810,6 +958,35 @@ Large Laptop = 1440px
 
 .apps-inner-left img {
    width: 23em;
+}
+
+/* ! Try Section */
+
+.try {
+   min-height: 60vh;
+}
+
+.try-inner {
+   h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5em;
+      margin-top: 1em;
+   }
+
+   p {
+      font-size: 1rem;
+      margin-bottom: 1em;
+   }
+
+   button {
+      font-size: 1rem;
+      margin-top: 0.75em;
+      margin-bottom: 2em;
+   }
+
+   button + p {
+      margin-bottom: 2em;
+   }
 }
 
 /* _______________________________________________________________ */
@@ -1093,6 +1270,35 @@ Large Laptop = 1440px
    .apps-inner-left img {
       width: 18em;
    }
+
+   /* ! Try Section */
+
+   .try {
+      min-height: 50vh;
+   }
+
+   .try-inner {
+      h2 {
+         font-size: 2rem;
+         margin-bottom: 0.5em;
+         margin-top: 1em;
+      }
+
+      p {
+         font-size: 0.8rem;
+         margin-bottom: 1em;
+      }
+
+      button {
+         font-size: 0.9rem;
+         margin-top: 0.75em;
+         margin-bottom: 2em;
+      }
+
+      button + p {
+         margin-bottom: 2em;
+      }
+   }
 }
 
 /* _______________________________________________________________ */
@@ -1347,7 +1553,7 @@ Large Laptop = 1440px
 
    /* ! Synchronization Section */
    .synchronization {
-      min-height: 47vh;
+      min-height: 40vh;
       background-size: 10em;
       background-position: top left;
    }
@@ -1431,7 +1637,7 @@ Large Laptop = 1440px
 
    .images {
       grid-template: repeat(4, 25%) / 100%;
-      margin-top: -10em;
+      margin-top: -8em;
    }
 
    /* ! Apps Section */
@@ -1483,6 +1689,121 @@ Large Laptop = 1440px
       width: 17em;
       margin-top: 1em;
       margin-bottom: 2em;
+   }
+
+   /* ! Try Section */
+
+   .try {
+      min-height: 50vh;
+   }
+
+   .try-inner {
+      section {
+         img {
+            width: 3rem;
+         }
+      }
+   }
+
+   /* ! Footer */
+
+   footer {
+      padding-top: 5em;
+      text-align: center;
+
+      .footer-inner {
+         .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            section {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+
+               img {
+                  width: 40%;
+                  margin-bottom: 1rem;
+               }
+               p {
+                  width: 80%;
+                  margin-bottom: 1em;
+               }
+            }
+
+            .footer-menu {
+               display: flex;
+               flex-direction: column;
+
+               h3 {
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  margin-bottom: 0.5em;
+                  margin-top: 1.5em;
+               }
+
+               a {
+                  margin-bottom: 0.5em;
+                  font-weight: 300;
+
+                  &:hover {
+                     color: var(--Light-cyan-blue);
+                  }
+               }
+
+               p {
+                  width: 80%;
+               }
+
+               button {
+                  align-self: center;
+                  margin-top: 1em;
+                  font-size: 1rem;
+                  background-color: var(--Medium-cyan-blue);
+                  color: var(--Very-dark-cyan-blue);
+                  padding: 0.25em 2em;
+                  margin-top: 0.75em;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  display: flex;
+
+                  &:hover {
+                     background-color: var(--Medium-cyan-blue-hover);
+                     color: var(--White);
+                  }
+               }
+            }
+         }
+
+         .bottom {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            border-top: 1px solid var(--Very-dark-cyan-blue);
+            padding-block: 1em;
+            margin-top: 2em;
+
+            p {
+               margin-top: 1em;
+            }
+
+            section {
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               gap: 2em;
+
+               img {
+                  width: 25%;
+
+                  &:hover {
+                     filter: brightness(0.8);
+                  }
+               }
+            }
+         }
+      }
    }
 }
 
