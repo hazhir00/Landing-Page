@@ -746,7 +746,7 @@ Large Laptop = 1440px
 @media (max-width: 500px) {
    /* ! Hero Section */
    .hero {
-      height: 80vh;
+      min-height: 60vh;
    }
 
    .hero-inner {
@@ -791,7 +791,7 @@ Large Laptop = 1440px
 
    /* ! Project Management Section */
    .project-management {
-      height: 80vh;
+      min-height: 60vh;
       margin-top: 2em;
    }
 
@@ -838,7 +838,7 @@ Large Laptop = 1440px
 
    /* ! Work Together Section */
    .work-together {
-      height: 80vh;
+      min-height: 60vh;
    }
 
    .work-together-inner {
@@ -859,7 +859,7 @@ Large Laptop = 1440px
 
    .work-together-inner-right h2 {
       text-align: center;
-      margin-top: 0.5em;
+      margin-top: 2em;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 0.25em;
@@ -884,11 +884,12 @@ Large Laptop = 1440px
    .work-together-inner-left img {
       width: 18em;
       margin-top: 3em;
+      margin-bottom: 3em;
    }
 
    /* ! Extension Section */
    .extension {
-      height: 80vh;
+      min-height: 60vh;
    }
 
    .extension-inner {
@@ -935,12 +936,11 @@ Large Laptop = 1440px
    .extension-inner-left img {
       width: 20em;
       margin-top: 1em;
-      margin-bottom: 2em;
    }
 
    /* ! Customization Section */
    .customization {
-      height: 80vh;
+      min-height: 60vh;
    }
 
    .customization-inner {
@@ -961,7 +961,6 @@ Large Laptop = 1440px
 
    .customization-inner-right h2 {
       text-align: center;
-      margin-top: 2em;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 0.25em;
