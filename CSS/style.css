@@ -1694,7 +1694,8 @@ Large Laptop = 1440px
    /* ! Try Section */
 
    .try {
-      min-height: 50vh;
+      min-height: 40vh;
+      text-align: center;
    }
 
    .try-inner {
