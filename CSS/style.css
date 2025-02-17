@@ -34,6 +34,7 @@ header {
     padding-block: 0.25em;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 nav {
@@ -489,6 +490,7 @@ button {
 
                 p {
                     text-align: start;
+                    width: 100%;
                     font-size: 1.6rem;
                     font-weight: 700;
                     margin-bottom: 0.2em;
@@ -863,6 +865,15 @@ button {
 
     button + p {
         margin-bottom: 2em;
+
+        a {
+            color: red;
+            font-weight: 500;
+
+            &:hover {
+                color: hsl(0, 100%, 58%);
+            }
+        }
     }
 
     section {
