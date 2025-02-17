@@ -1,424 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- ? Meta Tags-->
-      <!-- Specifies the character encoding for the HTML document -->
-      <meta charset="UTF-8" />
-      <!-- Sets the viewport to ensure the page is responsive on all devices -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- Provides a brief description of the page for search engines -->
-      <meta name="description" content="Your Website Description" />
-      <!-- Specifies the author of the document -->
-      <meta name="author" content="Hazhir Naseri" />
-      <meta name="keywords" content="HTML, CSS, JavaScript, Hamburger Menu" />
-      <!-- Instructs search engines to index the page and follow its links -->
-      <meta name="robots" content="index, follow" />
-      <!-- Sets the theme color for the browser's UI elements on mobile devices -->
-      <meta name="theme-color" content="#ffffff" />
-      <!-- Open Graph meta tags for better social media sharing -->
-      <!-- The title of your page when shared on social media -->
-      <meta property="og:title" content="Your Page Title" />
-      <!-- A brief description of your page when shared on social media -->
-      <meta property="og:description" content="Your Page Description" />
-      <!-- URL to an image that represents your page when shared on social media -->
-      <meta property="og:image" content="URL to your image" />
-      <!-- The canonical URL of your page -->
-      <meta property="og:url" content="URL to your page" />
-      <!-- The type of content, typically 'website' for general web pages -->
-      <meta property="og:type" content="website" />
-      <!-- ? Style Sheet -->
-      <link rel="stylesheet" href="CSS/reset.css" />
-      <link rel="stylesheet" href="CSS/font.css" />
-      <link rel="stylesheet" href="CSS/style.css" />
-      <!-- ?  Favorites Icon -->
-      <link
-         rel="shortcut icon"
-         href="Assets/Images/Logo/Favicon.png"
-         type="image/x-icon"
-      />
-      <!-- ? Script Tag -->
-      <script src="script.js" defer></script>
-      <!-- ? Title -->
-      <title>مدیریت</title>
-   </head>
-   <body>
-      <!-- ! Header Desktop -->
-      <header>
-         <nav>
-            <section class="logo">
-               <a href="index.html">
-                  <img src="Assets/Images/Logo/Logo.webp" alt="Logo" />
-               </a>
-            </section>
-            <section class="menu">
-               <ul>
-                  <li>
-                     <a href="#">محصولات</a>
-                     <img src="Assets/Images/Angle.svg" alt="" />
-                     <ul>
-                        <li>دانلود اپلیکیشن</li>
-                        <li>اپلیکیشن موبایل</li>
-                        <li>سفارشی سازی</li>
-                        <li>افزونه ها</li>
-                     </ul>
-                  </li>
-                  <li>
-                     <a href="#">خدمات</a>
-                     <img src="Assets/Images/Angle.svg" alt="" />
-                     <ul>
-                        <li>پشتیبانی</li>
-                        <li>به روز رسانی منظم</li>
-                        <li>مدیرت حساب ها</li>
-                        <li>نصب و راه‌اندازی</li>
-                        <li>مدیریت حساب و داده ها</li>
-                     </ul>
-                  </li>
-                  <li>
-                     <a href="#">آموزش</a>
-                     <img src="Assets/Images/Angle.svg" alt="" />
-                     <ul>
-                        <li>راهنمای استفاده</li>
-                        <li>مقالات آموزشی</li>
-                        <li>وبینار ها</li>
-                     </ul>
-                  </li>
-                  <li>
-                     <a href="#">‌تعرفه‌ها</a>
-                     <img src="Assets/Images/Angle.svg" alt="" />
-                     <ul>
-                        <li>تعرفه های اشتراکی</li>
-                        <li>تعرفه های پروژه‌ای</li>
-                        <li>بسته های سفارشی</li>
-                        <li>تعرفه های ویژه</li>
-                     </ul>
-                  </li>
-               </ul>
-            </section>
-            <section class="cta-buttons">
-               <a href="#" class="sign-in">ورود</a>
-               <a href="#" class="free-try">
-                  رایگان امتحان کنید
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </a>
-            </section>
-            <!-- ! Mobile Menu -->
-            <section class="hamburger">
-               <img src="Assets/Images/Bars.svg" alt="" id="bars" />
-            </section>
-            <section class="hamburger-menu" id="hamburger-menu">
-               <img src="Assets/Images/close.svg" alt="" id="close" />
-               <nav>
-                  <ul>
-                     <li class="accordion-link">
-                        <a href="#">محصولات</a>
-                        <img src="Assets/Images/Angle.svg" alt="" class="angle-down" />
+    <head>
+        <!-- ? Meta Tags-->
+        <!-- Specifies the character encoding for the HTML document -->
+        <meta charset="UTF-8" />
+        <!-- Sets the viewport to ensure the page is responsive on all devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Provides a brief description of the page for search engines -->
+        <meta name="description" content="Your Website Description" />
+        <!-- Specifies the author of the document -->
+        <meta name="author" content="Hazhir Naseri" />
+        <meta name="keywords" content="HTML, CSS, JavaScript, Hamburger Menu" />
+        <!-- Instructs search engines to index the page and follow its links -->
+        <meta name="robots" content="index, follow" />
+        <!-- Sets the theme color for the browser's UI elements on mobile devices -->
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Open Graph meta tags for better social media sharing -->
+        <!-- The title of your page when shared on social media -->
+        <meta property="og:title" content="Your Page Title" />
+        <!-- A brief description of your page when shared on social media -->
+        <meta property="og:description" content="Your Page Description" />
+        <!-- URL to an image that represents your page when shared on social media -->
+        <meta property="og:image" content="URL to your image" />
+        <!-- The canonical URL of your page -->
+        <meta property="og:url" content="URL to your page" />
+        <!-- The type of content, typically 'website' for general web pages -->
+        <meta property="og:type" content="website" />
+        <!-- ? Style Sheet -->
+        <link rel="stylesheet" href="CSS/reset.css" />
+        <link rel="stylesheet" href="CSS/font.css" />
+        <link rel="stylesheet" href="CSS/style.css" />
+        <!-- ?  Favorites Icon -->
+        <link
+            rel="shortcut icon"
+            href="Assets/Images/Logo/Favicon.png"
+            type="image/x-icon"
+        />
+        <!-- ? Script Tag -->
+        <script src="script.js" defer></script>
+        <!-- ? Title -->
+        <title>مدیریت</title>
+    </head>
+    <body>
+        <!-- ! Header Desktop -->
+        <header>
+            <nav>
+                <section class="logo">
+                    <a href="index.html">
+                        <img src="Assets/Images/Logo/Logo.webp" alt="Logo" />
+                    </a>
+                </section>
+                <section class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">محصولات</a>
+                            <img src="Assets/Images/Angle.svg" alt="" />
+                            <ul>
+                                <li>دانلود اپلیکیشن</li>
+                                <li>اپلیکیشن موبایل</li>
+                                <li>سفارشی سازی</li>
+                                <li>افزونه ها</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">خدمات</a>
+                            <img src="Assets/Images/Angle.svg" alt="" />
+                            <ul>
+                                <li>پشتیبانی</li>
+                                <li>به روز رسانی منظم</li>
+                                <li>مدیرت حساب ها</li>
+                                <li>نصب و راه‌اندازی</li>
+                                <li>مدیریت حساب و داده ها</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">آموزش</a>
+                            <img src="Assets/Images/Angle.svg" alt="" />
+                            <ul>
+                                <li>راهنمای استفاده</li>
+                                <li>مقالات آموزشی</li>
+                                <li>وبینار ها</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">‌تعرفه‌ها</a>
+                            <img src="Assets/Images/Angle.svg" alt="" />
+                            <ul>
+                                <li>تعرفه های اشتراکی</li>
+                                <li>تعرفه های پروژه‌ای</li>
+                                <li>بسته های سفارشی</li>
+                                <li>تعرفه های ویژه</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="cta-buttons">
+                    <a href="#" class="sign-in">ورود</a>
+                    <a href="#" class="free-try">
+                        رایگان امتحان کنید
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </a>
+                </section>
+                <!-- ! Mobile Menu -->
+                <section class="hamburger">
+                    <img src="Assets/Images/Bars.svg" alt="" id="bars" />
+                </section>
+                <section class="hamburger-menu" id="hamburger-menu">
+                    <img src="Assets/Images/close.svg" alt="" id="close" />
+                    <nav>
                         <ul>
-                           <li>دانلود اپلیکیشن</li>
-                           <li>اپلیکیشن موبایل</li>
-                           <li>سفارشی سازی</li>
-                           <li>افزونه ها</li>
+                            <li class="accordion-link">
+                                <a href="#">محصولات</a>
+                                <img
+                                    src="Assets/Images/Angle.svg"
+                                    alt=""
+                                    class="angle-down"
+                                />
+                                <ul>
+                                    <li>دانلود اپلیکیشن</li>
+                                    <li>اپلیکیشن موبایل</li>
+                                    <li>سفارشی سازی</li>
+                                    <li>افزونه ها</li>
+                                </ul>
+                            </li>
+                            <li class="accordion-link">
+                                <a href="#">خدمات</a>
+                                <img
+                                    src="Assets/Images/Angle.svg"
+                                    alt=""
+                                    class="angle-down"
+                                />
+                                <ul>
+                                    <li>پشتیبانی</li>
+                                    <li>به روز رسانی منظم</li>
+                                    <li>مدیرت حساب ها</li>
+                                    <li>نصب و راه‌اندازی</li>
+                                    <li>مدیریت حساب و داده ها</li>
+                                </ul>
+                            </li>
+                            <li class="accordion-link">
+                                <a href="#">آموزش</a>
+                                <img
+                                    src="Assets/Images/Angle.svg"
+                                    alt=""
+                                    class="angle-down"
+                                />
+                                <ul>
+                                    <li>راهنمای استفاده</li>
+                                    <li>مقالات آموزشی</li>
+                                    <li>وبینار ها</li>
+                                </ul>
+                            </li>
+                            <li class="accordion-link">
+                                <a href="#">‌تعرفه‌ها</a>
+                                <img
+                                    src="Assets/Images/Angle.svg"
+                                    alt=""
+                                    class="angle-down"
+                                />
+                                <ul>
+                                    <li>تعرفه های اشتراکی</li>
+                                    <li>تعرفه های پروژه‌ای</li>
+                                    <li>بسته های سفارشی</li>
+                                    <li>تعرفه های ویژه</li>
+                                </ul>
+                            </li>
                         </ul>
-                     </li>
-                     <li class="accordion-link">
-                        <a href="#">خدمات</a>
-                        <img src="Assets/Images/Angle.svg" alt="" class="angle-down" />
+                    </nav>
+                </section>
+            </nav>
+        </header>
+        <!-- ! Hero Section -->
+        <section class="hero">
+            <section class="hero-inner">
+                <section class="hero-inner-right">
+                    <h1>برنامه‌ریزی و <span>مدیریت</span> پروژه در نهایت دقت و آسانی!</h1>
+                    <p>
+                        با اپلیکیشن ما، به بهترین شیوه پروژه های خود را مدیریت کنید.
+                        ابزارهای هوشمند، تحلیل‌های عمیق و برنامه‌ریزی آسان، همه در یک
+                        مکان.
+                    </p>
+                    <button class="btn-hero">
+                        رایگان امتحان کنید
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="hero-inner-left">
+                    <img src="Assets/Images/Hero.webp" alt="managment hero image" />
+                </section>
+            </section>
+        </section>
+        <!-- ! Project Management Section -->
+        <section class="project-management">
+            <section class="project-management-inner">
+                <section class="project-management-inner-right">
+                    <h2>مدیریت پروژه</h2>
+                    <p>
+                        قابلیت پشتیبانی از تصاویر، فیلم ها، فایل های PDF و فایل های صوتی
+                        همچنین عبارات و نمودارهای ریاضی را میتوانید مستقیماً ازدرون برنامه
+                        ایجاد کنید. با اپ موبایل عکس بگیرید و در یادداشت ها ذخیره کنید.
+                    </p>
+
+                    <button>
+                        همین حالا شروع کنید
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="project-managment-inner-left">
+                    <img
+                        src="Assets/Images/Project Management.webp"
+                        alt="Project management image"
+                        loading="lazy"
+                    />
+                </section>
+            </section>
+        </section>
+        <!-- ! Work Together Section -->
+        <section class="work-together">
+            <section class="work-together-inner">
+                <section class="work-together-inner-right">
+                    <h2>همکاری</h2>
+                    <p>
+                        با فضای خالی، یادداشت های خود را با همکاران خود به اشتراک بگذارید
+                        و با آنها همکاری کنید. همچنین می توانید یادداشتی را در اینترنت
+                        منتشر کنید و آن را با دیگران به اشتراک بگذارید.
+                    </p>
+                    <button>
+                        بزن بریم
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="work-together-inner-left">
+                    <img
+                        src="Assets/Images/Work Together.svg"
+                        alt="Work together image"
+                        loading="lazy"
+                    />
+                </section>
+            </section>
+        </section>
+        <!-- ! Extension Section -->
+        <section class="extension">
+            <section class="extension-inner">
+                <section class="extension-inner-right">
+                    <h2>افزونه ها</h2>
+                    <p>
+                        برای ذخیره صفحات وب یا گرفتن اسکرین شات به عنوان یادداشت، از
+                        افزونه وب کلیپر موجود در کروم و فایرفاکس استفاده کنید.
+                    </p>
+                    <button>
+                        بزن بریم
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="extension-inner-left">
+                    <img
+                        src="Assets/Images/Use an Extention.webp"
+                        alt="Use an Extention image"
+                        loading="lazy"
+                    />
+                </section>
+            </section>
+        </section>
+        <!-- ! Customization Section -->
+        <section class="customization">
+            <section class="customization-inner">
+                <section class="customization-inner-right">
+                    <h2>شخصی‌ سازی</h2>
+                    <p>
+                        برنامه را با افزونه ها، تم های سفارشی و چندین ویرایشگر متن سفارشی
+                        کنید. یا اسکریپت ها و پلاگین های خود را با استفاده از Extension
+                        API ایجاد کنید.
+                    </p>
+                    <button>
+                        بزن بریم
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="customization-inner-left">
+                    <img
+                        src="Assets/Images/Customise it to your needs.webp"
+                        alt="Customise it to your needs image"
+                        loading="lazy"
+                    />
+                </section>
+            </section>
+        </section>
+        <!-- ! Plan Section -->
+        <section class="plan">
+            <section class="plan-inner">
+                <h2>پلن انتخابی</h2>
+                <p>
+                    چه بخواهید سازماندهی کنید، زندگی شخصی خود را در مسیر درست نگه دارید یا
+                    بهره وری در محل کار را افزایش دهید، Evernote برنامه مناسبی برای شما
+                    دارد.
+                </p>
+                <section class="plans">
+                    <section class="plan-card">
+                        <h3>رایگان</h3>
+                        <p>0 ریال</p>
+                        <p>بلا بلا بلا</p>
                         <ul>
-                           <li>پشتیبانی</li>
-                           <li>به روز رسانی منظم</li>
-                           <li>مدیرت حساب ها</li>
-                           <li>نصب و راه‌اندازی</li>
-                           <li>مدیریت حساب و داده ها</li>
+                            <li>یادداشت های متنی</li>
+                            <li>یادداشت های صوتی</li>
+                            <li>یادداشت های تصویری</li>
+                            <li>یادداشت های PDF</li>
+                            <li>یادداشت های فیلم</li>
                         </ul>
-                     </li>
-                     <li class="accordion-link">
-                        <a href="#">آموزش</a>
-                        <img src="Assets/Images/Angle.svg" alt="" class="angle-down" />
+                        <button>رایگان</button>
+                    </section>
+                    <section class="plan-card personal">
+                        <h3>شخصی</h3>
+                        <p>۲۰۰ ریال</p>
+                        <p>بلا بلا بلا</p>
                         <ul>
-                           <li>راهنمای استفاده</li>
-                           <li>مقالات آموزشی</li>
-                           <li>وبینار ها</li>
+                            <li>همکاری</li>
+                            <li>همگام سازی</li>
+                            <li>پشتیبانی</li>
+                            <li>افزونه ها</li>
+                            <li>تم ها</li>
                         </ul>
-                     </li>
-                     <li class="accordion-link">
-                        <a href="#">‌تعرفه‌ها</a>
-                        <img src="Assets/Images/Angle.svg" alt="" class="angle-down" />
+                        <button>بیشتر</button>
+                    </section>
+                    <section class="plan-card">
+                        <h3>سازمانی</h3>
+                        <p>0 ریال</p>
+                        <p>بلا بلا بلا</p>
                         <ul>
-                           <li>تعرفه های اشتراکی</li>
-                           <li>تعرفه های پروژه‌ای</li>
-                           <li>بسته های سفارشی</li>
-                           <li>تعرفه های ویژه</li>
+                            <li>یادداشت های متنی</li>
+                            <li>یادداشت های صوتی</li>
+                            <li>یادداشت های تصویری</li>
+                            <li>یادداشت های PDF</li>
+                            <li>یادداشت های فیلم</li>
                         </ul>
-                     </li>
-                  </ul>
-               </nav>
+                        <button>رایگان</button>
+                    </section>
+                </section>
             </section>
-         </nav>
-      </header>
-      <!-- ! Hero Section -->
-      <section class="hero">
-         <section class="hero-inner">
-            <section class="hero-inner-right">
-               <h1>برنامه‌ریزی و <span>مدیریت</span> پروژه در نهایت دقت و آسانی!</h1>
-               <p>
-                  با اپلیکیشن ما، به بهترین شیوه پروژه های خود را مدیریت کنید. ابزارهای
-                  هوشمند، تحلیل‌های عمیق و برنامه‌ریزی آسان، همه در یک مکان.
-               </p>
-               <button class="btn-hero">
-                  رایگان امتحان کنید
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
+        </section>
+        <!-- ! Synchronization Section -->
+        <section class="synchronization">
+            <section class="synchronization-inner">
+                <h2>از هر جایی کار کنید</h2>
+                <p>
+                    با همگام سازی با سرویس های مختلف، از جمله whitepace، Dropbox و
+                    OneDrive، به یادداشت های خود از رایانه، تلفن یا رایانه لوحی خود دسترسی
+                    پیدا کنید. این برنامه در ویندوز، macOS، لینوکس، اندروید و iOS در دسترس
+                    است.
+                </p>
+                <button>
+                    بزن بریم
+                    <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
+                </button>
             </section>
-            <section class="hero-inner-left">
-               <img src="Assets/Images/Hero.webp" alt="managment hero image" />
+        </section>
+        <!-- ! Data Section -->
+        <section class="data">
+            <section class="data-inner">
+                <section class="data-inner-right">
+                    <h2>امنیت بالا</h2>
+                    <p>
+                        برنامه منبع باز است و یادداشت های شما در قالب باز ذخیره می شوند،
+                        بنابراین همیشه به آنها دسترسی خواهید داشت. از رمزگذاری End-To-End
+                        (E2EE) برای ایمن کردن یادداشت های شما استفاده می کند و اطمینان می
+                        دهد که هیچ کس به جز خودتان نمی تواند به آنها دسترسی داشته باشد.
+                    </p>
+                    <button>
+                        بزن بریم
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="data-inner-left">
+                    <img
+                        src="Assets/Images/Element.svg"
+                        alt="Customise it to your needs image"
+                        loading="lazy"
+                    />
+                </section>
             </section>
-         </section>
-      </section>
-      <!-- ! Project Management Section -->
-      <section class="project-management">
-         <section class="project-management-inner">
-            <section class="project-management-inner-right">
-               <h2>مدیریت پروژه</h2>
-               <p>
-                  قابلیت پشتیبانی از تصاویر، فیلم ها، فایل های PDF و فایل های صوتی همچنین
-                  عبارات و نمودارهای ریاضی را میتوانید مستقیماً ازدرون برنامه ایجاد کنید.
-                  با اپ موبایل عکس بگیرید و در یادداشت ها ذخیره کنید.
-               </p>
-
-               <button>
-                  همین حالا شروع کنید
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
+        </section>
+        <!-- ! Sponsors Section -->
+        <section class="sponsors">
+            <section class="sponsors-inner">
+                <h2>حامیان ما</h2>
+                <section class="images">
+                    <img src="/Assets/Images/Apple.svg" alt="Apple Logo" />
+                    <img src="/Assets/Images/Microsoft.svg" alt="Microsoft Logo" />
+                    <img src="/Assets/Images/Slack.svg" alt="Slack Logo" />
+                    <img src="/Assets/Images/Google.svg" alt="Google Logo" />
+                </section>
             </section>
-            <section class="project-managment-inner-left">
-               <img
-                  src="Assets/Images/Project Management.webp"
-                  alt="Project management image"
-                  loading="lazy"
-               />
+        </section>
+        <!-- ! Apps Section -->
+        <section class="apps">
+            <section class="apps-inner">
+                <section class="apps-inner-right">
+                    <h2>همگام سازی</h2>
+                    <p>
+                        Whitepace با نرم افزار مورد علاقه شما همکاری می کند. با بیش از
+                        1000+ برنامه با Zapier یکپارچه شوید تا همه ابزارهایی را که برای
+                        موفقیت پروژه خود نیاز دارید در اختیار داشته باشید.
+                    </p>
+                    <button>
+                        بزن بریم
+                        <img
+                            src="Assets/Images/Right Arrow.svg"
+                            alt=""
+                            class="right-arrow"
+                        />
+                    </button>
+                </section>
+                <section class="apps-inner-left">
+                    <img
+                        src="Assets/Images/Apps.svg"
+                        alt="Customise it to your needs image"
+                        loading="lazy"
+                    />
+                </section>
             </section>
-         </section>
-      </section>
-      <!-- ! Work Together Section -->
-      <section class="work-together">
-         <section class="work-together-inner">
-            <section class="work-together-inner-right">
-               <h2>همکاری</h2>
-               <p>
-                  با فضای خالی، یادداشت های خود را با همکاران خود به اشتراک بگذارید و با
-                  آنها همکاری کنید. همچنین می توانید یادداشتی را در اینترنت منتشر کنید و
-                  آن را با دیگران به اشتراک بگذارید.
-               </p>
-
-               <button>
-                  بزن بریم
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
+        </section>
+        <!-- ! Clients Section -->
+        <section class="client">
+            <section class="client-inner">
+                <h2>مشتریان</h2>
+                <section class="clients">
+                    <section class="client-card">
+                        <img src="/Assets/Images/Quote2.svg" alt="" />
+                        <p>
+                            چه بخواهید سازماندهی کنید، زندگی شخصی خود را در مسیر درست نگه
+                            دارید یا بهره وری در محل کار را افزایش دهید، Evernote برنامه
+                            مناسبی برای شما دارد.
+                        </p>
+                        <section>
+                            <img src="/Assets/Images/Avater1.svg" alt="profile pic" />
+                            <section>
+                                <h3>مریم</h3>
+                                <p>رییس</p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="client-card second-client">
+                        <img src="/Assets/Images/Quote.svg" alt="" />
+                        <p>
+                            چه بخواهید سازماندهی کنید، زندگی شخصی خود را در مسیر درست نگه
+                            دارید یا بهره وری در محل کار را افزایش دهید، Evernote برنامه
+                            مناسبی برای شما دارد.
+                        </p>
+                        <section>
+                            <img src="/Assets/Images/Avater2.svg" alt="profile pic" />
+                            <section>
+                                <h3>علی</h3>
+                                <p>وزیر</p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="client-card">
+                        <img src="/Assets/Images/Quote2.svg" alt="" />
+                        <p>
+                            چه بخواهید سازماندهی کنید، زندگی شخصی خود را در مسیر درست نگه
+                            دارید یا بهره وری در محل کار را افزایش دهید، Evernote برنامه
+                            مناسبی برای شما دارد.
+                        </p>
+                        <section>
+                            <img src="/Assets/Images/Avater3.svg" alt="profile pic" />
+                            <section>
+                                <h3>امیر</h3>
+                                <p>کارگر</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
             </section>
-            <section class="work-together-inner-left">
-               <img
-                  src="Assets/Images/Work Together.svg"
-                  alt="Work together image"
-                  loading="lazy"
-               />
+        </section>
+        <!-- ! Try Section -->
+        <section class="try">
+            <section class="try-inner">
+                <h2>همین حالا امتحان کنید</h2>
+                <p>
+                    به صورت رایگان شروع کنید. با افزایش نیازهایتان، کل تیم خود را اضافه
+                    کنید.
+                </p>
+                <button>
+                    بزن بریم
+                    <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
+                </button>
+                <p>در یک تیم بزرگ؟ با فروش تماس بگیرید</p>
+                <section>
+                    <img src="/Assets/Images/apple logo.svg" alt="apple logo" />
+                    <img src="/Assets/Images/windows logo.svg" alt="windows logo" />
+                    <img src="/Assets/Images/android logo.svg" alt="android logo" />
+                </section>
             </section>
-         </section>
-      </section>
-      <!-- ! Extension Section -->
-      <section class="extension">
-         <section class="extension-inner">
-            <section class="extension-inner-right">
-               <h2>افزونه ها</h2>
-               <p>
-                  برای ذخیره صفحات وب یا گرفتن اسکرین شات به عنوان یادداشت، از افزونه وب
-                  کلیپر موجود در کروم و فایرفاکس استفاده کنید.
-               </p>
-
-               <button>
-                  بزن بریم
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
+        </section>
+        <!-- ! Footer -->
+        <footer>
+            <section class="footer-inner">
+                <section class="top">
+                    <section>
+                        <img src="/Assets/Images/Logo/Logo.webp" alt="Logo" />
+                        <p>
+                            whitepace برای شیوه های جدید زندگی و کار ما ایجاد شده است. ما
+                            یک فضای کاری بهتر در سراسر جهان ایجاد می کنیم
+                        </p>
+                    </section>
+                    <section class="footer-menu">
+                        <h3>محصولات</h3>
+                        <a href="#">نمای کلی</a>
+                        <a href="#">تعرفه ها</a>
+                        <a href="#">مشتریان</a>
+                    </section>
+                    <section class="footer-menu">
+                        <h3>آموزش</h3>
+                        <a href="#">بلاگ</a>
+                        <a href="#">سولات پرتکرار</a>
+                        <a href="#">پشتیبانی</a>
+                    </section>
+                    <section class="footer-menu">
+                        <h3>شرکت</h3>
+                        <a href="#">درباره ما</a>
+                        <a href="#">خدمات ما</a>
+                        <a href="#">همکاری</a>
+                    </section>
+                    <section class="footer-menu">
+                        <h3>امتحان کنید</h3>
+                        <p>
+                            به صورت رایگان شروع کنید. با افزایش نیازهایتان، کل تیم خود را
+                            اضافه کنید.
+                        </p>
+                        <button>دانلود</button>
+                    </section>
+                </section>
+                <section class="bottom">
+                    <p>تمامی حقوق برای مدیریت محفوظ است.</p>
+                    <section>
+                        <img src="/Assets/Images/Facebook.svg" alt="facbook" />
+                        <img src="/Assets/Images/Twitter.svg" alt="twitter" />
+                        <img src="/Assets/Images/Linkedin.svg" alt="linkedin" />
+                    </section>
+                </section>
             </section>
-            <section class="extension-inner-left">
-               <img
-                  src="Assets/Images/Use an Extention.webp"
-                  alt="Use an Extention image"
-                  loading="lazy"
-               />
-            </section>
-         </section>
-      </section>
-      <!-- ! Customization Section -->
-      <section class="customization">
-         <section class="customization-inner">
-            <section class="customization-inner-right">
-               <h2>شخصی‌ سازی</h2>
-               <p>
-                  برنامه را با افزونه ها، تم های سفارشی و چندین ویرایشگر متن سفارشی کنید.
-                  یا اسکریپت ها و پلاگین های خود را با استفاده از Extension API ایجاد
-                  کنید.
-               </p>
-
-               <button>
-                  بزن بریم
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
-            </section>
-            <section class="customization-inner-left">
-               <img
-                  src="Assets/Images/Customise it to your needs.webp"
-                  alt="Customise it to your needs image"
-                  loading="lazy"
-               />
-            </section>
-         </section>
-      </section>
-      <!-- ! Plan Section -->
-      <!-- ! Synchronization Section -->
-      <section class="synchronization">
-         <section class="synchronization-inner">
-            <h2>از هر جایی کار کنید</h2>
-            <p>
-               با همگام سازی با سرویس های مختلف، از جمله whitepace، Dropbox و OneDrive، به
-               یادداشت های خود از رایانه، تلفن یا رایانه لوحی خود دسترسی پیدا کنید. این
-               برنامه در ویندوز، macOS، لینوکس، اندروید و iOS در دسترس است.
-            </p>
-            <button>
-               بزن بریم
-               <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-            </button>
-         </section>
-      </section>
-      <!-- ! Data Section -->
-      <section class="data">
-         <section class="data-inner">
-            <section class="data-inner-right">
-               <h2>امنیت بالا</h2>
-               <p>
-                  برنامه منبع باز است و یادداشت های شما در قالب باز ذخیره می شوند،
-                  بنابراین همیشه به آنها دسترسی خواهید داشت. از رمزگذاری End-To-End (E2EE)
-                  برای ایمن کردن یادداشت های شما استفاده می کند و اطمینان می دهد که هیچ کس
-                  به جز خودتان نمی تواند به آنها دسترسی داشته باشد.
-               </p>
-
-               <button>
-                  بزن بریم
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
-            </section>
-            <section class="data-inner-left">
-               <img
-                  src="Assets/Images/Element.svg"
-                  alt="Customise it to your needs image"
-                  loading="lazy"
-               />
-            </section>
-         </section>
-      </section>
-      <!-- ! Sponsors Section -->
-      <section class="sponsors">
-         <section class="sponsors-inner">
-            <h2>حامیان ما</h2>
-            <section class="images">
-               <img src="/Assets/Images/Apple.svg" alt="Apple Logo" />
-               <img src="/Assets/Images/Microsoft.svg" alt="Microsoft Logo" />
-               <img src="/Assets/Images/Slack.svg" alt="Slack Logo" />
-               <img src="/Assets/Images/Google.svg" alt="Google Logo" />
-            </section>
-         </section>
-      </section>
-      <!-- ! Apps Section -->
-      <section class="apps">
-         <section class="apps-inner">
-            <section class="apps-inner-right">
-               <h2>همگام سازی</h2>
-               <p>
-                  Whitepace با نرم افزار مورد علاقه شما همکاری می کند. با بیش از 1000+
-                  برنامه با Zapier یکپارچه شوید تا همه ابزارهایی را که برای موفقیت پروژه
-                  خود نیاز دارید در اختیار داشته باشید.
-               </p>
-
-               <button>
-                  بزن بریم
-                  <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-               </button>
-            </section>
-            <section class="apps-inner-left">
-               <img
-                  src="Assets/Images/Apps.svg"
-                  alt="Customise it to your needs image"
-                  loading="lazy"
-               />
-            </section>
-         </section>
-      </section>
-      <!-- ! Clients Section -->
-      <!-- ! Try Section -->
-      <section class="try">
-         <section class="try-inner">
-            <h2>همین حالا امتحان کنید</h2>
-            <p>
-               به صورت رایگان شروع کنید. با افزایش نیازهایتان، کل تیم خود را اضافه کنید.
-            </p>
-            <button>
-               بزن بریم
-               <img src="Assets/Images/Right Arrow.svg" alt="" class="right-arrow" />
-            </button>
-            <p>در یک تیم بزرگ؟ با فروش تماس بگیرید</p>
-            <section>
-               <img src="/Assets/Images/apple logo.svg" alt="apple logo" />
-               <img src="/Assets/Images/windows logo.svg" alt="windows logo" />
-               <img src="/Assets/Images/android logo.svg" alt="android logo" />
-            </section>
-         </section>
-      </section>
-      <!-- ! Footer -->
-      <footer>
-         <section class="footer-inner">
-            <section class="top">
-               <section>
-                  <img src="/Assets/Images/Logo/Logo.webp" alt="Logo" />
-                  <p>
-                     whitepace برای شیوه های جدید زندگی و کار ما ایجاد شده است. ما یک فضای
-                     کاری بهتر در سراسر جهان ایجاد می کنیم
-                  </p>
-               </section>
-               <section class="footer-menu">
-                  <h3>محصولات</h3>
-                  <a href="#">نمای کلی</a>
-                  <a href="#">تعرفه ها</a>
-                  <a href="#">مشتریان</a>
-               </section>
-               <section class="footer-menu">
-                  <h3>آموزش</h3>
-                  <a href="#">بلاگ</a>
-                  <a href="#">سولات پرتکرار</a>
-                  <a href="#">پشتیبانی</a>
-               </section>
-               <section class="footer-menu">
-                  <h3>شرکت</h3>
-                  <a href="#">درباره ما</a>
-                  <a href="#">خدمات ما</a>
-                  <a href="#">همکاری</a>
-               </section>
-               <section class="footer-menu">
-                  <h3>امتحان کنید</h3>
-                  <p>
-                     به صورت رایگان شروع کنید. با افزایش نیازهایتان، کل تیم خود را اضافه
-                     کنید.
-                  </p>
-                  <button>دانلود</button>
-               </section>
-            </section>
-
-            <section class="bottom">
-               <p>تمامی حقوق برای مدیریت محفوظ است.</p>
-               <section>
-                  <img src="/Assets/Images/Facebook.svg" alt="facbook" />
-                  <img src="/Assets/Images/Twitter.svg" alt="twitter" />
-                  <img src="/Assets/Images/Linkedin.svg" alt="linkedin" />
-               </section>
-            </section>
-         </section>
-      </footer>
-   </body>
+        </footer>
+    </body>
 </html>
